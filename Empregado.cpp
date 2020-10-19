@@ -2,14 +2,15 @@
 
 double Empregado::pagamentoMes(double horasTrabalhadas) {
 
-    double t = horasTrabalhadas;
-
     //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
     if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
-        t += x / 2;
+        double horasExtras = horasTrabalhadas - 8;
+        t += horasExtras / 2;
+        return (horasTrabalhadas + (horasExtras/2)) * salarioHora;
+    } else {
+        return horasTrabalhadas * salarioHora;
     }
-    return t * salarioHora;
+
 }
 
 void Empregado::setName(std::string _nome) {
