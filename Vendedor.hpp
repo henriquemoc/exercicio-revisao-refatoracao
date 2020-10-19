@@ -5,12 +5,16 @@
 
 class Vendedor : public Empregado {
 
-  public:
-
-    Vendedor(){}
-    ~Vendedor(){}
+public:
 
 	double quotaTotalAnual();
+
+	void setQuotaMensalVendas(double _quota);
+    double getQuotaMensalVendas();
+
+private:
+
+    double quotaMensalVendas;
 
 };
 
