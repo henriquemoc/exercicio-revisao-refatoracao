@@ -11,3 +11,39 @@ double Empregado::pagamentoMes(double horasTrabalhadas) {
     }
     return t * salarioHora;
 }
+
+void Empregado::setName(std::string _nome) {
+
+    this->nome = _nome;
+
+}
+
+std::string Empregado::getName() {
+
+    return this->nome;
+
+}
+
+void Empregado::setSalarioHora(double _salarioHora) {
+
+    this->salarioHora = _salarioHora;
+
+}
+
+double Empregado::getSalarioHora() {
+
+    return this->salarioHora;
+
+}
+
+void Empregado::setQuotaMensalVendas(double _quota) {
+
+    this->quotaMensalVendas = _quota;
+
+}
+
+double Empregado::getQuotaMensalVendas() {
+
+    return this->quotaMensalVendas;
+
+}
