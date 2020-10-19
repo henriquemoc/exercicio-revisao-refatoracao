@@ -6,14 +6,15 @@ double Vendedor::quotaTotalAnual() {
 
 }
 
-void Empregado::setQuotaMensalVendas(double _quota) {
+void Vendedor::setQuotaMensalVendas(double _quota) {
 
     this->quotaMensalVendas = _quota;
 
 }
 
-double Empregado::getQuotaMensalVendas() {
+double Vendedor::getQuotaMensalVendas() {
 
     return this->quotaMensalVendas;
 
 }
+
