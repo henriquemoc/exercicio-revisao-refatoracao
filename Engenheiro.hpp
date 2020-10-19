@@ -6,8 +6,6 @@
 class Engenheiro : public Empregado {
 
 public:
-    Engenheiro(){}
-    ~Engenheiro(){}
 
     void setProjetos(int _projetos);
     int getProjetos();
