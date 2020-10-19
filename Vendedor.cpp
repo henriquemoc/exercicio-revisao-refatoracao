@@ -1,14 +1,10 @@
-#include <string>
-#include "Empregado.hpp"
+#include "Vendedor.hpp"
 
-class Vendedor : public Empregado {
+double Vendedor::quotaTotalAnual() {
 
-  public:
-    std::string nome;  	  
-	
-	double quotaTotalAnual() {
-	  return quotaMensalVendas * 12;
-	}
-	
-};
+    return getQuotaMensalVendas() * 12;
+
+}
+
+
 
