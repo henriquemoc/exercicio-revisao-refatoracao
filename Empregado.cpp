@@ -35,15 +35,3 @@ double Empregado::getSalarioHora() {
     return this->salarioHora;
 
 }
-
-void Empregado::setQuotaMensalVendas(double _quota) {
-
-    this->quotaMensalVendas = _quota;
-
-}
-
-double Empregado::getQuotaMensalVendas() {
-
-    return this->quotaMensalVendas;
-
-}
