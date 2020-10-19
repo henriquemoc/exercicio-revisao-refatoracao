@@ -2,7 +2,7 @@
 
 double Vendedor::quotaTotalAnual() {
 
-    return getQuotaMensalVendas() * 12;
+    return quotaMensalVendas * 12;
 
 }
 
