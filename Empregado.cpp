@@ -2,9 +2,11 @@
 
 double Empregado::pagamentoMes(double horasTrabalhadas) {
 
+    int jornadaDiaria = 8;
+
     //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-    if (horasTrabalhadas > 8) {
-        double horasExtras = horasTrabalhadas - 8;
+    if (horasTrabalhadas > jornadaDiaria) {
+        double horasExtras = horasTrabalhadas - jornadaDiaria;
         return (horasTrabalhadas + (horasExtras/2)) * salarioHora;
     } else {
         return horasTrabalhadas * salarioHora;
