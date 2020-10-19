@@ -7,8 +7,6 @@
 class Empregado {
 
 public:
-    Empregado(){}
-    ~Empregado(){}
 
     double pagamentoMes(double horasTrabalhadas);
 
@@ -18,13 +16,9 @@ public:
     void setSalarioHora(double _salarioHora);
     double getSalarioHora();
 
-    void setQuotaMensalVendas(double _quota);
-    double getQuotaMensalVendas();
-
 private:
     std::string nome;
     double salarioHora;
-    double quotaMensalVendas;
 
 };
 
